@@ -16,5 +16,7 @@ public class Ingredient {
     private String name;
     @Column
     private double pricePerKg;
+    @Column
+    private String imagePath;
 
 }
