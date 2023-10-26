@@ -7,7 +7,7 @@ import Button from "@mui/material/Button";
 
 const Navbar = () => {
   return (
-    <AppBar position="static">
+    <AppBar position="sticky">
       <Toolbar>
         <Typography variant="h6" style={{ flexGrow: 1 }}>
           Blog
