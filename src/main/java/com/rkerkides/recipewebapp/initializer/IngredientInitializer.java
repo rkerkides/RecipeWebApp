@@ -17,7 +17,9 @@ public class IngredientInitializer {
     public void initData() {
         // Create and save the ingredients
         Ingredient ingredient1 = new Ingredient();
-        ingredient1.setName("Sample Ingredient 1");
+        ingredient1.setName("Apple");
+        ingredient1.setPricePerKg(1.99);
+        ingredient1.setImagePath("uploads/apple.png");
         ingredientService.save(ingredient1);
 
         Ingredient ingredient2 = new Ingredient();
