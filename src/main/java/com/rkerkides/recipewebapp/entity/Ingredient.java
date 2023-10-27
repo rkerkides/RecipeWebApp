@@ -11,11 +11,11 @@ public class Ingredient {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
+    private long ingredientID;
     @Column
     private String name;
     @Column
-    private double pricePerKg;
+    private Double pricePerKg;
     @Column
     private String imagePath;
 
