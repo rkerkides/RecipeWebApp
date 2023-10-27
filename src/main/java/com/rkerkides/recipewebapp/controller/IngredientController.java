@@ -55,7 +55,7 @@ public class IngredientController {
     // Update: Update an existing ingredient
     @PutMapping("/{id}")
     public ResponseEntity<Ingredient> updateIngredient(@PathVariable Long id, @RequestBody Ingredient ingredient) {
-        ingredient.setId(id);
+        ingredient.setIngredientID(id);
         Ingredient updatedIngredient = ingredientService.save(ingredient);
         return new ResponseEntity<>(updatedIngredient, HttpStatus.OK);
     }
