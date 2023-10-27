@@ -8,6 +8,7 @@ import java.util.Date;
 import java.util.Set;
 
 @Entity
+@Table(name = "users")  // Specify a different table name to avoid reserved keyword conflicts
 @Getter
 @Setter
 public class User {
@@ -24,5 +25,4 @@ public class User {
 
     @OneToMany(mappedBy = "user")
     private Set<Post> posts;
-
 }
