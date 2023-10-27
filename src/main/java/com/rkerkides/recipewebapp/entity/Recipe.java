@@ -21,6 +21,7 @@ public class Recipe {
     private Integer preparationTime;
     private Integer cookingTime;
     private Date datePosted;
+    private String imagePath;
 
     @ManyToOne
     @JoinColumn(name = "userID")
